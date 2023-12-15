@@ -1,6 +1,6 @@
 import createDom from './items/startDom'
 import drawMessage from './items/drawMessage'
-import AddMenu from './items/addMenu'
+import AddMenu from './items/AddMenu'
 import LazyLoader from './items/lazyLoader'
 import UpMenu from './items/UpMenu'
 import captureFile from './items/captureFile'
