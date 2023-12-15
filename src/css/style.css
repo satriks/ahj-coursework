@@ -1,0 +1,396 @@
+
+body {
+  color: #520909d1;
+}
+
+
+ .bot__wrapper{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  position: relative;
+ }  
+
+ .bot{
+  border: 1px solid darkblue;
+  border-radius: 5px 5px 0 0;
+  min-height: 50vh;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+   /* flex-shrink: 5; */
+ }
+
+ .bot__input-control{
+  display: flex;
+  align-items: center;
+
+ }
+
+ .bot__input{
+  /* padding-left: 50px; */
+  flex-grow: 1;
+  height: 25px;
+ }
+
+ button{
+  background-color: transparent;
+  border: none;
+  align-self: baseline;
+  cursor: pointer;
+  font-size: 18px;
+ }
+
+ .bot__menu{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  border: 1px skyblue none;
+  border-radius: 30%;
+  background-color: rgba(36, 77, 226, 0.4);
+  z-index: 5;
+ }
+
+ .message{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  /* min-height: 60px; */
+  
+  border: 1px solid blue;
+  width: auto;
+  max-width: 80%;
+  margin: 10px;
+ }
+
+ .message__content{
+  flex-grow: 1;
+ }
+
+ .message__time{
+  align-self: flex-end;
+  font-size: 12px;
+  margin-top: 10px;
+ }
+
+ .bot__add{
+  position: relative;
+ }
+
+ .add__menu{
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  border: 1px solid blue;
+  width: 200px;
+  top: -27px;
+  left: 1px;
+  background-color: rgba(36, 77, 226, 0.4);
+ }
+
+ .up__menu{
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  width: 100px;
+  border: 1px solid rgba(36, 77, 226, 0.8) ;
+  border-radius: 3px;
+  z-index: 6;
+
+ }
+
+ .up__menu  span {
+  background-color: rgba(36, 77, 226, 0.8);
+  color: beige;
+  border-radius: 3px;
+  text-align: center;
+  z-index: 6;
+ }
+
+ .message:last-child{
+  margin-bottom: 400px;
+  /* background-color: red; */
+ }
+
+.capture__file{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(36, 77, 226, 0.8);
+  border-radius: 10px;
+  padding-top: 20px;
+  z-index: 5;
+}
+
+
+.capture__wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+
+.capture__btn{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(36, 77, 226, 0.8);
+}
+
+.capture__message{
+  padding-top: 20px;
+  width: 250px;
+}
+
+.capture__close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+}
+
+.message__text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.find__wrapper{
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.find__input {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.find__close{
+  position: relative;
+  right: 20px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.timeline__stream{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.bot__audio, .bot__video, .bot__position{
+  position: relative;
+}
+
+.bot__audio:hover::after{
+  content: "Запись аудио";
+  position: absolute;
+  width: 100px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+
+}
+.bot__video:hover::after{
+  content: "Запись видео";
+  position: absolute;
+  width: 100px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+
+}
+.bot__position:hover::after{
+  content: "Геопозиция";
+  position: absolute;
+  width: 100px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+
+}
+
+
+.category__menu{
+  position: absolute;
+  top: 10px;
+  right: -160px;
+  padding: 20px;
+  padding-top: 5px;
+
+  border: 1px solid rgba(36, 77, 226, 0.8) ;
+  border-radius: 10px;
+  background-color: rgba(36, 77, 226, 0.3)
+}
+
+
+.category__item{
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.category__count{
+  margin-left: 10px;
+  padding: 0 5px;
+  border: 1px solid yellow;
+  border-radius: 25%;
+  
+  
+}
+
+
+.category__close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 12px;
+}
+
+.message__control{
+  position: absolute;
+  /* background-color: rgba(36, 77, 226, 0.3); */
+  border-radius: 20px 0 0 20px;
+  top: 0;
+  left: -20px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.message__download, .message__pin, .message__favorite{
+  font-size: 14px;
+  padding: 0;
+  align-self: center;
+}
+
+.message__favorite, .message__download{
+  font-size: 18px;
+  
+}
+
+.message__favorite-active{
+  background-color: greenyellow;
+  border-radius: 50%;
+  /* color: greenyellow */
+}
+
+.message__download:hover::after{
+  content: "Скачать файл";
+  position: absolute;
+  width: 100px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+}
+.message__pin:hover::after{
+  content: "Закрепить сообщение";
+  position: absolute;
+  width: 150px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+}
+.message__favorite:hover::after{
+  content: "Добавить в избранное";
+  position: absolute;
+  width: 150px;
+  font-size: 10px;
+  top: -20px;
+  right: 0;
+  background-color: rgba(36, 77, 226, 0.1);
+}
+
+
+
+
+.message{
+  position: relative;
+}
+
+.pin__area{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  background-color: rgba(237, 239, 248, 0.945);
+  z-index: 5;
+}
+
+.pin__message{
+  position: relative;
+}
+
+.pin__message > video{
+  height: 150px;
+  width: auto;
+}
+
+.pin__message > img{
+  height: 150px;
+  width: auto;
+  
+}
+
+.pin__area > .pin__message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+
+}
+
+.pin__message > .message__content{
+  justify-self: flex-start;
+}
+
+.close__favorite{
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  font-size: 12px;
+  background-color: rgba(136, 150, 203, 0.4);
+  border-radius: 20px;
+
+}
