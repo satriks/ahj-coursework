@@ -10,7 +10,7 @@ import { getGeolocation } from './items/getGeolocation'
 export default class DomControl {
   constructor (host) {
     this.host = host
-    this.port = 80
+    this.port = 70
     createDom(document.body)
     this.input = document.querySelector('.bot__input')
     this.bot = document.querySelector('.bot')
