@@ -16,7 +16,7 @@ export default class DomControl {
     this.bot = document.querySelector('.bot')
     this.addMenu = new AddMenu()
     this.lazy = new LazyLoader()
-    this.ws = new WebSocket('wss:' + host.split(':')[1] + ':' + (this.port + 1) + '?test=test')
+    this.ws = new WebSocket('wss:' + host.split(':')[1] + ':' + (this.port) + '?test=test')
     this.category = new CategoryInterface(this.filterCategory, this.getMessages)
     this.upMenu = new UpMenu(this.categoryMenu)
     this.pin = null
