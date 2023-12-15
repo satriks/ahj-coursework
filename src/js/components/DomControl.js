@@ -1,4 +1,4 @@
-import createDom from './items/StartDom'
+import createDom from './items/startDom'
 import drawMessage from './items/drawMessage'
 import AddMenu from './items/addMenu'
 import LazyLoader from './items/lazyLoader'
